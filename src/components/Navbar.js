@@ -33,7 +33,8 @@ const Navbar = () => {
                 id="header"
                 className={`header d-flex align-items-center ${isNavOpen ? 'mobile-nav-active' : ''
                     }`}
-            >                <div className="container-fluid container-xl d-flex align-items-center justify-content-between">
+            >
+                <div className="container-fluid container-xl d-flex align-items-center justify-content-between">
                     <a href="#" className="logo d-flex align-items-center">
                         {/* Uncomment the line below if you also wish to use an image logo */}
                         <img src={process.env.PUBLIC_URL + '/logo.png'} alt="" />
@@ -76,6 +77,7 @@ const Navbar = () => {
                                 </ul>
                             </li>
                             <li><a href="#contact">Contact</a></li>
+
                             &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  <button
                                 className='btn'
                                 style={{
@@ -103,7 +105,7 @@ const Navbar = () => {
                                 Get Quote
                             </button>
 
-                            &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;   <i
+                            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;   <i
                                 className="bi bi-three-dots-vertical"
                                 style={{ color: 'black', cursor: 'pointer' }}
                                 onClick={openModal}
